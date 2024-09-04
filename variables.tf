@@ -49,12 +49,12 @@ variable "ssm_private_subnet_c" {
 ### BALANCER ###
 variable "load_balancer_internal" {
   description = "indicates if the load balancer is public or not"
-
+  type = bool
 }
 
 variable "load_balancer_type" {
   description = "load balancer type"
-
+  type = string
 }
 
 ### ECS GENERAL ###
@@ -70,7 +70,7 @@ variable "node_instance_type" {
 
 variable "node_volume_size" {
   description = "set nome volume size"
-  type        = string
+  type        = number
 }
 
 variable "node_volume_type" {
