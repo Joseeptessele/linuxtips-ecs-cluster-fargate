@@ -79,17 +79,31 @@ variable "node_volume_type" {
 }
 
 variable "cluster_on_demand_min_size" {
-  description = "cluster minimum size"
+  description = "cluster minimum size for on demand instances"
   type        = number
 }
 
 variable "cluster_on_demand_max_size" {
-  description = "cluster maximum size"
+  description = "cluster maximum size for on demand instances"
   type        = number
 }
 
 variable "cluster_on_demand_desired_size" {
-  description = "cluster desired size"
+  description = "cluster desired size for on demand instances"
   type        = number
 }
 
+variable "cluster_spot_min_size" {
+  description = "cluster minimum size for spot instances"
+  type        = number
+}
+
+variable "cluster_spot_max_size" {
+  description = "cluster maximum size for spot instances"
+  type        = number
+}
+
+variable "cluster_spot_desired_size" {
+  description = "cluster desired size for spot instances"
+  type        = number
+}
