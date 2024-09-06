@@ -69,12 +69,12 @@ variable "node_instance_type" {
 }
 
 variable "node_volume_size" {
-  description = "set nome volume size"
+  description = "volume size (GiB) used by ECS nodes"
   type        = number
 }
 
 variable "node_volume_type" {
-  description = "set volume type"
+  description = "EBS volume used by ECS nodes"
   type        = string
 }
 
