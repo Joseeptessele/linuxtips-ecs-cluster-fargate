@@ -49,12 +49,12 @@ variable "ssm_private_subnet_c" {
 ### BALANCER ###
 variable "load_balancer_internal" {
   description = "indicates if the load balancer is public or not"
-  type = bool
+  type        = bool
 }
 
 variable "load_balancer_type" {
   description = "load balancer type"
-  type = string
+  type        = string
 }
 
 ### ECS GENERAL ###

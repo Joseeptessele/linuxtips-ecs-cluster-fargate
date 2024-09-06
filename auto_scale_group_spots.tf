@@ -7,9 +7,9 @@ resource "aws_autoscaling_group" "spots" {
     data.aws_ssm_parameter.subnet_private_1c.value,
   ]
 
-  desired_capacity = var.cluster_on_demand_desired_size
-  max_size         = var.cluster_on_demand_max_size
-  min_size         = var.cluster_on_demand_min_size
+  desired_capacity = var.cluster_spot_desired_size
+  max_size         = var.cluster_spot_max_size
+  min_size         = var.cluster_spot_min_size
 
   launch_template {
     id      = aws_launch_template.spots.id
