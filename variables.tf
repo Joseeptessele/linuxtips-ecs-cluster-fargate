@@ -107,3 +107,10 @@ variable "cluster_spot_desired_size" {
   description = "cluster desired size for spot instances"
   type        = number
 }
+
+variable "capacity_providers" {
+  type = list
+  default = [
+    "FARGATE", "FARGATE_SPOT"
+  ]
+}
